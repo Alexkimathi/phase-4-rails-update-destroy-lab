@@ -3,7 +3,7 @@ class PlantsController < ApplicationController
 
   # GET /plants
   def index
-    plants = find_plant
+    plants = Plant.all
     render json: plants
   end
 
